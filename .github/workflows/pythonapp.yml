@@ -30,6 +30,7 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest
+        # run test
         pytest -v tests.py
       env:
         SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}

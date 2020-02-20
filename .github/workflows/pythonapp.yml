@@ -31,4 +31,9 @@ jobs:
       run: |
         pip install pytest
         pytest -v tests.py
+      env:
+        SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+        TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+        TELEGRAM_TARGET: ${{ secrets.TELEGRAM_TARGET }}
+
 
